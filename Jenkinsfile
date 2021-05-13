@@ -3,7 +3,7 @@ node {
     git 'https://github.com/jayprofessional2000/game-of-life.git'
   }
   stage('buold and package') {
-    sh 'mvn package'
+    sh 'mvn clean package'
   }
   stage('results') {
     archive 'gameoflife-web/target/gameoflife.war'
